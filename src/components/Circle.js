@@ -14,6 +14,7 @@ const Circle = ({ checked = false, handleCheck = () => {}, index = null }) => {
       <Image
         width="10"
         height="10"
+        alt="mark as completed icon"
         src="/images/icon-check.svg"
         className={`${
           checked ? 'visible' : 'hidden'

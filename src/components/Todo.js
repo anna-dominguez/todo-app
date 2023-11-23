@@ -15,7 +15,7 @@ const Todo = ({ todo, handleChange, handleCheck, handleDelete, index }) => {
         onChange={(e) => handleChange(e, index)}
         className={`bg-white dark:bg-[#25273D] outline-none ml-3 w-full
          placeholder:text-[#9495A5] dark:placeholder:text-[#767992]
-         text-[#494C6B] dark:text-[#C8CBE7] text-xs
+         text-[#494C6B] dark:text-[#C8CBE7] text-xs lg:text-lg
          ${todo.completed && 'line-through'}`}
       />
       <Image
@@ -23,6 +23,7 @@ const Todo = ({ todo, handleChange, handleCheck, handleDelete, index }) => {
         className="cursor-pointer"
         width={18}
         height={18}
+        alt="delete task icon"
         src="/images/icon-cross.svg"
       />
     </div>

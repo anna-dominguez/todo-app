@@ -14,7 +14,10 @@ const AddTodo = ({ todos, setTodos }) => {
   }
 
   return (
-    <section className="mt-10 flex bg-white dark:bg-[#25273D] w-full px-5 py-3.5 rounded-[5px] z-50">
+    <section
+      className="mt-10 flex bg-white dark:bg-[#25273D] w-full px-5 py-3.5 radius z-50
+      todo-shadow"
+    >
       <Circle />
       <input
         ref={inputRef}
@@ -22,7 +25,7 @@ const AddTodo = ({ todos, setTodos }) => {
         placeholder="Create a new todo..."
         className="bg-white dark:bg-[#25273D] outline-none ml-3 w-full
          placeholder:text-[#9495A5] dark:placeholder:text-[#767992]
-         text-[#494C6B] dark:text-[#C8CBE7] text-xs"
+         text-[#494C6B] dark:text-[#C8CBE7] text-xs lg:text-lg"
       />
     </section>
   )

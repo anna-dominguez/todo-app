@@ -30,8 +30,8 @@ const Todos = ({ todos, setTodos }) => {
 
   return (
     <section
-      className="z-50 mt-4 lg:mt-6 w-full divide-y divide-[#393A4B]
-               bg-white dark:bg-[#25273D] rounded-[5px]"
+      className="z-50 mt-4 lg:mt-6 w-full divide-y divide-[#E3E4F1] dark:divide-[#393A4B]
+               bg-white dark:bg-[#25273D] radius todo-shadow"
     >
       {todos
         .filter((todo) => {
@@ -54,7 +54,7 @@ const Todos = ({ todos, setTodos }) => {
       <div className="text-[#5B5E7E] flex justify-between p-5 text-xs tracking-[-0.167px relative">
         <p>{todos.filter(({ completed }) => !completed).length} items left</p>
         <div
-          className="flex absolute lg:static bg-white dark:bg-[#25273D] rounded-[5px]
+          className="flex absolute lg:static bg-white dark:bg-[#25273D] radius
                     -bottom-20 p-5 lg:p-0 left-0 gap-5 w-full lg:w-fit justify-center font-bold text-sm
                     "
         >

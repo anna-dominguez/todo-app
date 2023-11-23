@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 @layer {
-  html {
-    @apply bg-[#FAFAFA] dark:bg-[#171823];
+  .todo-shadow {
+    @apply shadow-[0_35px_50px_-15px_rgba(194,195,214,0.50)] dark:shadow-[0_35px_50px_-15px_rgba(0,0,0,0.50)];
   }
-  main {
-    /* @apply bg-[url("/images/bg-mobile-light.jpg")] dark:bg-[url("/images/bg-mobile-dark.jpg")] bg-no-repeat w-screen; */
+  .radius {
+    @apply rounded-[5px];
   }
 }
